@@ -1,5 +1,5 @@
 {
-	"scripts": {"build": "pnpm tailwindcss -i ./public/input.css -o ./public/dist/output.css",
+	"scripts": {"build": "pnpm tailwindcss -i ./public/input.css -o ./public/dist/output.css && ls && cat public/dist/output.css",
 				"start": "npx tailwindcss -i ./public/input.css -o ./public/dist/output.css --watch"
 	},
 	"devDependencies": {
