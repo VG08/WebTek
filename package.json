@@ -1,7 +1,7 @@
 {
 	"scripts": {
-		"build": "pnpm tailwindcss -i ./public/input.css -o ./public/dist/output.css",
-		"start": "pnpm tailwindcss -i ./public/input.css -o ./public/dist/output.css --watch & pnpm serve public"
+		"build": "tailwindcss -i ./public/input.css -o ./public/dist/output.css",
+		"start": "tailwindcss -i ./public/input.css -o ./public/dist/output.css --watch & serve public"
 	},
 	"devDependencies": {
 		"serve": "^13.0.2",
