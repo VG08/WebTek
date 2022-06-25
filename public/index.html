@@ -5,134 +5,111 @@
   <title>Vite Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/extra.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <link rel="icon" type="image/png" href="./favicon.png">
-  <header class="text-gray-400 bg-gradient-to-r from-cyan-700 via-purple-900 to-gray-700  body-font fixed w-full">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <svg preserveAspectRatio="xMidYMid" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="-1.871 -0.4069999999999627 259.721 257.849" height="24"><linearGradient id="a" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%"><stop offset="0" stop-color="#41d1ff"/><stop offset="1" stop-color="#bd34fe"/></linearGradient><linearGradient id="b" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%"><stop offset="0" stop-color="#ffea83"/><stop offset=".083" stop-color="#ffdd35"/><stop offset="1" stop-color="#ffa800"/></linearGradient><path d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62z" fill="url(#a)"/><path d="M185.432.063L96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028 72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113z" fill="url(#b)"/></svg>
-        <span class="ml-3 text-xl">Vite Solutions</span>
-      </a>
-      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-white" href="#Main">Home</a>
-        <a class="mr-5 hover:text-white" href="#Services">Our services</a>
-        <a class="mr-5 hover:text-white" href="#About">About us</a>
-      </nav>
-      <a href="#hire">
-      <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Hire us!
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button>
-    </a>
-    </div>
-  </header>
   
+  <div class="header1">
+    
+    <div class = "container">
+      
+        <div class="navbar1 bg-white" id="myNavbar1">
+            
+            <a href="#" class="home111">Home</a>
+            <a href="#Services">Our Services</a>
+            <a href="#About">About us</a>
+            <a href="login.html" class="login">Login</a>
+            <a href="#" class="icon" onclick="openNav()">
+                <div class="openbarcont">
+                    <div class="openbar"></div>
+                    <div class="openbar"></div>
+                    <div class="openbar"></div>
+                </div>
+            
+            </a>
+          
+
+        </div>
+
+</div>
 </head>
 
-<body>
-    <section class="text-gray-400 bg-gradient-to-r transition-all from-cyan-700 via-purple-900 to-gray-700 body-font pt-20" id="Main">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Find best solutions
-              <br class="hidden lg:inline-block">for your buisness
+<body class="font-poppins">
+    <section class="text-gray-400 body-font" id="Main">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center lg:text-center lg:pt-60">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center self-center">
+            <h1 class="title-font text-5xl mb-4 text-gray-900 font-bold">Vite Solutions
             </h1>
             <p class="mb-8 leading-relaxed">Get solutions ranging from finance to marketing all at one place.</p>
             <div class="flex justify-center">
-            <a href="#Services"><button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Services</button></a>
-              <a href="#About"><button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">About us</button></a>
+            <a href="#Services"><button class="inline-flex text-gray-900 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Services</button></a>
+              <a href="#About"><button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-gray-900 rounded text-lg">About us</button></a>
             </div>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="./Stonks.png">
-          </div>
-        </div>
-      </section>
-      <section class="text-gray-400 bg-gradient-to-r from-cyan-700 via-purple-900 to-gray-700 body-font"  id="Services">
-        <div class="container px-5 py-24 mx-auto">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-white mb-20">Services we offer
-            
-          </h1>
-          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div class="p-4 md:w-1/3 flex">
-              <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
-              </div>
-              <div class="flex-grow pl-6">
-                <h2 class="text-white text-lg title-font font-medium mb-2">Buisness planning</h2>
-                <p class="leading-relaxed text-base">Just starting out? Our buisness plannning team is comprised of experts from all over the world which will help you gather investors and build momentum</p>
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3 flex">
-              <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                  <circle cx="6" cy="6" r="3"></circle>
-                  <circle cx="6" cy="18" r="3"></circle>
-                  <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                </svg>
-              </div>
-              <div class="flex-grow pl-6">
-                <h2 class="text-white text-lg title-font font-medium mb-2">Finances</h2>
-                <p class="leading-relaxed text-base">Don't have someone to keep check of your Finances? Vite has got you covered, our world class accountants and finance managers will help you take your buisness to new heights</p>
-
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3 flex">
-              <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <div class="flex-grow pl-6">
-                <h2 class="text-white text-lg title-font font-medium mb-2">Marketing</h2>
-                <p class="leading-relaxed text-base">Marketing is of the most if not the most important of growing a buisness, at vite solutions we have world class Advertiesers and market researchers who will make sure your buisness gets more traction that any other buisnesss</p>
-  
-              </div>
-            </div>
+          <div class="md:hidden">
+            <img class="object-cover object-center rounded" alt="hero" src="./sol.png">
           </div>
         </div>
       </section>
+      
+      <span id="Services"></span>
+      <section class="s2">
+          <br>
+          <div class="services-tab reveal">
+              <div class="s2-services">
+                  
+                  <H1>business planning</H1>
+                  <p>Just starting out? Our business plannning team is comprised of experts from all over the world which will help you gather investors and build momentum</p>
+                  
+              </div>
+              <div class="s2-services">
+                  <H1>Finances</H1>
+                  <p>Don't have someone to keep check of your Finances? Vite has got you covered, our world class accountants and finance managers will help you take your buisness to new heights</p>
+              </div>
+              <div class="s2-services">
+                  <H1>Marketing</H1>
+                  <p>Marketing is of the most if not the most important of growing a business, at vite solutions we have world class Advertiesers and market researchers who will make sure your buisness gets more traction that any other buisnesss</p>
+              </div>
+              
+          </div>
+          <br>
+      </section>
+      <span id="About"></span>
 
-
-      <section class="text-gray-400 bg-gradient-to-r from-cyan-700 via-purple-900 to-gray-700 body-font" id="About">
+      <section class="text-gray-400  body-font reveal">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">About Us</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We are Vite Solutions, we have been offering solutions to buisness all over the world for thhe last 10 years. All our clients have returns positive reviews and theier buisness have boomed.</p>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">About Us</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-600 text-base">We are Vite Solutions, we have been offering solutions to buisness all over the world for thhe last 10 years. All our clients have returns positive reviews and theier buisness have boomed.</p>
           </div>
-          <section class="text-gray-400 bg-gradient-to-r from-cyan-700 via-purple-900 to-gray-700 body-font">
+          <section class="text-gray-400  body-font">
             <div class="container px-5 py-24 mx-auto">
               <div class="flex flex-wrap -m-4">
                 <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
                   <div class="h-full">
                     <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10" src="https://www.mercurynews.com/wp-content/uploads/2020/09/hypatia-h_5532403bd9fce5fc2d365bf8c011ebec-h_91b7e79020de9b18e3f36792d87cbd96.jpg?w=1080">
-                    <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                    <p class="leading-relaxed text-gray-600">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                     <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                    <h2 class="text-white font-medium title-font tracking-wider text-sm">MELON MASK</h2>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">MELON MASK</h2>
                     <p class="text-gray-500">CEO SpaceY</p>
                   </div>
                 </div>
                 <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
                   <div class="h-full">
                     <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10" src="data:image/jpeg;base64,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">
-                    <p class="leading-relaxed">My dream of LongHard has always been that our operating system winshit gets DEVELOPERS!! DEVELOPERS!! DEVELOPERS!!, <b class="text-white">Vite solutions has been a great company and helped us achieve the dream</b></p>
+                    <p class="leading-relaxed text-gray-600">My dream of LongHard has always been that our operating system winshit gets DEVELOPERS!! DEVELOPERS!! DEVELOPERS!!, <b class="text-gray-900">Vite solutions has been a great company and helped us achieve the dream</b></p>
                     <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                    <h2 class="text-white font-medium title-font tracking-wider text-sm">STEVE BALMER</h2>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">STEVE BALMER</h2>
                     <p class="text-gray-500">COO LongHard</p>
                   </div>
                 </div>
                 <div class="lg:w-1/3 lg:mb-0 p-4">
                   <div class="h-full">
                     <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAKAAoAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQMEBQYCBwj/xAA3EAABAwIEAwYEBQMFAAAAAAABAAIDBBEFEiExBkFREyIyYXGBBxShsSNCkcHwFWLRUnKi4fH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAQIEA//EAB8RAQEAAgMBAQEBAQAAAAAAAAABAhEDEiFBIjFRMv/aAAwDAQACEQMRAD8A8YXJXSFRuUJUiARIukiARdBpIvy6qbS4fnp2z1EgjY7YbkjqrSkw+J7WujiaWjS7ruselufslacihjppnkZY3WPMhPRUsXa9lNPleTY5Wk29VrmsgZFkZQvklZq7tDa/oP8A1MGaQ02aKGF1OSQ5ksYa5rumYaj9VPZXVmJ6Exu7sgcOpYQopaWm32WprmMbA2QCQx2BcA6zoyeoVZJAx0d3vZqCWOtZx8tP4ETIrFRuhPTxBguwtc3YEfuEzZVKkiEITAQhCAEIQgHUIQgEQlSIBFKpackNe5pLnm0bNy7z9FGGpA6q+wqIGrldIxzgLCzTlsB9lOV0cm0qKmqIoGEROa92pOexH6bfqpZhrO5BQlwLRZxAAuTqSFbYLh9TIBJHEA1xsHHXReg4FgUUDTLOwPkJvchZ8s/WnHj82wNJwtiMuQzNdqLgEX+qkycOyhpYYiWu3Oi9V7FoHgA0so81Iw3Lmg+yntTmMeS4jgVQGseQQ5rMpB2eNtuax9ThU9PKY7OaL6Ar3usoGyDUZm3v3gs7imCRyMJexu24Fk5nYd45XilRG+N2t9eXJMDpzG62eMYZC0loaATss/LhgLHZXHM3X1C6457cMsLFW4CwskTkrcjiL3smyusrlSIQhMBCEXSB1CEJgIQhAdwgGQaX8lpeH2OfIIXmxnN3m30Hv9lnqMjtmtOx0Wo4Xa51Y1jWk2dv5XXPNeD2XCYI4aOKJjQAGhWtO0t3VXhLs0UdrbclbhhuFk+tfw8XDmuH2JvbVOEXCjSaGyexIam07qrq9o7E3AVpKO6PNVeJAtiNlOVXHn+N0rTI9wtlGyxj6gRVZdtra63XEDnRwyuIuLFeY1MpMhO2t1fC58yLWFoqX5fATomCupCHPuuVrxY6RBQglURLpUiLJA6lQhMBCEIDuEOMrQxrnOLtA0XJW44KjEtdJ3CC0asINwmfhZSRz4vVTvNnQwtDDbbM7U+th9V6nNh0TpY69rGtmAyl4AGcefp+64Z5+6aMOP8APZJoXMooGB5sGjXqiXiJ7ReCglkZ/qd3f2TjoGzMu8Xa2xUSsmxkwO/p1HTsY0CxqDdz9dbAEAaXsSVn+u2vFhDxBE4ZZYnsfYGxCn9o2YNczosJBR4tVtEtbVBlQZbCKNjWgM/z7rZ4bB8vBke9zjbd26PZdVWprZypqooI3OlIGUdVjsV4pgfKYaSJ00mwawEqq+IFVWPxSGkpZXNjkFnjNZSP6RW4Vg8U9DUPjqXg5msLDY6WJJBuLX6cvNEmxfzFNxBVVElIXTUz4ARazhuvOKnxGy9FxaoxSph+WxF0cwc25exliw+ZGhWAqqd0Upa8WsV0w8cuTelcN0nNPNb38oG5TRFnEdCtGNZspoiCEJFSQl5JAhAOpQuV0EwRCEIONT8Oa/5PiSOJzrMqo3RG+xduPtb3Xthc40zYmnutjudOdtF83U8z6eeKeIkSRPa9vkQbhfR+GysqsOjqoi10c8DXgg8rXCzcs1ltp4st4WJ2HEPisVNdtsqzDnENNjzVqw3b3lxdEf5aMkvc0X9EXu4DYJJakZyxgJDRdxHIKPBX0bpHtEzXujFntDhoUaivfrzvjsuixTPm6HVazBaoyUEd9Q5qw/HWIU8uMPhj73csTfmr7gKr+cwhrSO9GS31slYuXazxajjqqd0RLWtOt+i8p40LG4gI4wO6vTOIql1NC5wJIAJIXknENSKmtEjTe4unxz1HL/FODZxcdLFME809MfqmVsx/1izoukQUKkBCEJA4lCRF1QKkQhB7KF638LuKKMYOcKxOpZE+mJ7LtXWzRnXfyv8AZeRhdC3PX1U5Y9ppWOXW7fSWGzNkaJInBzHAODhsQeas6id0cQDBd7jZo6rDfDHE21vD8MRdeWlAheOdgO79LLazuEcJmLb5GnQb3WOzV01y79OU8bIIy3MCXeN3UqLW09GIXMdGxrHdBa91WUkOKyxfMVQia57rhmcgtHLknqiOsliax8bA1p0DJiCfojyKktY7FOEsOZVOlaXNJOuYk8/NTcNkjwWTLGQWgd5oFtOoTfEZry15tTRt21lLtlloYMWnPbsnZKxt8rdSDvoLo8v9F3i1fGNQwYc6WPvRPbcFeQVDj2hudl6dxdal4XpaW4JeA4eV9bLy+tcDM/LtdXxz1y5b4jSG50XBSpCtUZbSIQhIghCEB2hIlVAISIQC810uF0gNz8Ka11Njs9O06Tw5rdS0/wCHFeyUtQJQBe4+68C4ElMXFeHkG13OafTIV7DM+SCXNCbAnZZeX/pr4vcWk7VpJZl2VfiFL8y3K1ryb20F9FIw6rjnpszh2b72cHb3UkysbH3jcjU2UaVthKzCGzVEMMkRaGsNgb6/yyi1fZYbG107msGuVt7HQ20Wwr5oe3Y9wD/yjnrva3VeW8cYq2Usgidnc7v577Dn9fsiYbO56niFxTjXz5iaw/hxNA9SsfI7M4kqVO8kAX2UNwPi5HZd8Jpn5LtykKCUi6uIQhCQCEJEB2hCFQCEIQAlCTmnoKeSUjKLA7uOyA1Pw0oG1vEEkjgXGlpnzMaObtvsSvWywSMBssH8Homx43UvaLtbBZxPMFwBXodXSy4VP2c1zSOP4Mx2H9p8/v6rNzY3ytXBlPcUUtlb4B9dVW4jX4gyLKA0i1rk2JCvo3Na4E2LTvdLWUNPVw6AA9VyxtdMsY8uxTH8RDspLGvabhwubG91lZQ+SRz5CS9xJJK2+P4PDSyOe46knms9HR9pLZrST5K+yenqgniLWXKaEV6U5h4ySPLktY3A5a+VtPTNBeRcu5NHUqmxCOITSMpx+DE0RsP+q3P3XTG79c+THXjPkEGx3CFMrILOa63iF1Fy23XVncoXfZE7LlzS3RwIQCJEqRAdoAJNhr6BWsdDAPEC4/3FSGxtbo1ob6KtnpUMpZn/AJCB1Oi7FGR45Gt9LlWrgUw+NweHN1KRaMx0sTSDbN1zKRu2zdBzJQGkHvnXpdLLmc0i1gg3oPwihbH/AFStlIbAxrYST1sXE/pb9VYcEcR1uOY/W1lVI2SLKWwxu2jZfQDztv1PsqGkeMG+FGI1LX5ZsQeWM1sblzWH/iHKJ8LKhraqYyHMCLOaPuj+lHqeLBskclTQU7w6I/iBoGV4G9vNVsOIslpTLG7M3yWhbFIM0rx2Za7K9ulnN6/W6xGI0h4exN9LE4/KVILoS78vVvtf6rNy8fX9Rr4c+35qhx6eavrABcRN5fzdFDR0tNGJsTqm0sDj4neJw/tbu4+QVvHTOrJO53zsATZpPS4+6iVOA1GK4rJ2kxrJKeLK97NI47WsxvLRLjw7eunJnMPPqDLxQxtW6HCaCODCS0tkEms8gOmYuvYHoNv2y9ZDaqEY1a52ZrrWDmnUEe1lY4w+kwuFsZkD5CbuyncW2/VQ8GmGK3b3Wy0ocWxnd0ZNyR6G9/8ActOmPt6arKNz6d81tGODB/PcKofEDodwt5VUOThrtXC2drpPTUWWGkd33FOo+mhFbxBISAcsYLnHl0T99kmUNByDfdI657Bhb+I1ubnZNSUjPy5h6aoLzn10PRP27tymSfoClCbB1N+S6BQbsi++i4cSNAEpcQ8tadlzudvdBkBI1/Zcy7E21XbnNA31XExBjvtcIJP4pxQzYBgGEw+CGF1RJru57jb9B91RUVRNQzNmpJCyRv5hzUZmovfmu/VMnqnCnxR7OL5THI7tdp2wJPK3toNitxi1HQ8Y8P5qKpjNZGO0hkDvzgaX9Rp7r5zvcqdhWL1+ETCSgqZIiDfKD3T7Is35Tlsu49jwGSkw3h1lfjUjYHZn2ZIQTcHLp7g67LC8Q8eSvgfh+At+XpS5xfKPFISSbnr9llMVxatxObta2dzzfRt+6P5+6r0sZ1moeWVyu6WV7pJC97nPcd3ONyURSvhkbJE4se03a5psQUlklk6Wmzi4sOJYLLh9bGIpslmzRtJa+wNgQPCTt015LNStc3Ug2vZO0E8QjhaJRE9ru9dt77/9fyysKiooxTfLhxbc9sDbQPzXt+miQU7Q+9spueoTrQ7NkLXB3QhWr66mM+YTh34rixwLnZAWkB2u1jbQJY6tjSxj6lkkojc10hLgHXcCAH7j1sgKaaMkGQNPd3K6JDo9GkC1wrasqoXFraesMQEpLyQbyggcgLHmLH1XMlTTtgdGAMxowzPc3LtO7bb3QH//2Q==">
-                    <p class="leading-relaxed">PirateFlix was made so that any person anywhere would be able to binge any movie and seris they want at a very low price, <b class="text-white"> VITE SOLUTIONS has helped our buisness imensely by getting investors and viewers</b></p>
+                    <p class="leading-relaxed text-gray-600">PirateFlix was made so that any person anywhere would be able to binge any movie and seris they want at a very low price, <b class="text-gray-900"> VITE SOLUTIONS has helped our buisness imensely by getting investors and viewers</b></p>
                     <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                    <h2 class="text-white font-medium title-font tracking-wider text-sm">SEED GHOSLING</h2>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">SEED GHOSLING</h2>
                     <p class="text-gray-500">CMO PirateFlix</p>
                   </div>
                 </div>
@@ -140,35 +117,8 @@
             </div>
           </section>
       </section>
-      <section class="text-gray-400 bg-gradient-to-r from-cyan-700 via-purple-900 to-gray-700 body-font"  id="hire">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Hire Us</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Just fill this form and our repersentatives will contact you shortly</p>
-          </div>
-          <div class="lg:w-full md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-gray-400">Company Name</label>
-                  <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-              </div>
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
-                  <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-              </div>
-              <div class="p-2 w-full">
-                <div class="relative">
-                  <label for="message" class="leading-7 text-sm text-gray-400">How would you like our company to help you?</label>
-                  <textarea id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                </div>
-              </div>
-              <div class="p-2 w-full">
-                <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
-              </div>
+      <section class="text-gray-400  body-font"  id="hire">
+        
               <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
                 <a class="text-indigo-400">info@vite.com</a>
                 <p class="leading-normal my-5">69 Llama street,
@@ -203,5 +153,62 @@
         </div>
       </section>
 </body>
+
+<script type="text/javascript">
+  function openNav(){
+      var x = document.getElementById("myNavbar1");
+      if (x.className === "navbar1"){
+          x.className += "responsive";
+      } else{
+          x.className = "navbar1"
+      }
+  }
+
+  window.addEventListener('scroll', reveal);
+
+  function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+      var whyush1 = document.querySelectorAll('.wuh1reveal');
+      var rr = document.querySelectorAll('.reviewreveal');
+
+      for(var i = 0; i < reveals.length;i++){
+          var windowheight = window.innerHeight;
+          var revealTop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if(revealTop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+          }
+          else{
+              reveals[i].classList.remove('active');
+          }
+      }
+      for(var i = 0; i < whyush1.length;i++){
+          var windowheight = window.innerHeight;
+          var revealTop = whyush1[i].getBoundingClientRect().top;
+          var revealpoint = 200;
+
+          if(revealTop < windowheight - revealpoint){
+              whyush1[i].classList.add('active');
+          }
+          else{
+              whyush1[i].classList.remove('active');
+          }
+      }
+      for(var i = 0; i < rr.length;i++){
+          var windowheight = window.innerHeight;
+          var revealTop = rr[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if(revealTop < windowheight - revealpoint){
+              rr[i].classList.add('active');
+          }
+          else{
+              rr[i].classList.remove('active');
+          }
+      }
+  }
+
+</script>
 
 </html>
